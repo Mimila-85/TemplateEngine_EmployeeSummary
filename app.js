@@ -32,6 +32,15 @@ class TeamBuilder {
                     type: "input",
                     message: "What is your Manager's email?",
                     name: "managerEmail",
+                    validate: email => {
+                        const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+                        if(re) {
+                            return true;
+                        }
+                        else{
+                            return "You have entered an invalid email address."
+                        } 
+                    },
                 },
                 {
                     type: "input",
@@ -89,6 +98,15 @@ class TeamBuilder {
                     type: "input",
                     message: "What is your Engineer's email?",
                     name: "engineerEmail",
+                    validate: email => {
+                        const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+                        if(re) {
+                            return true;
+                        }
+                        else{
+                            return "You have entered an invalid email address."
+                        } 
+                    },
                 },
                 {
                     type: "input",
@@ -122,6 +140,15 @@ class TeamBuilder {
                     type: "input",
                     message: "What is your Intern's email?",
                     name: "interEmail",
+                    validate: email => {
+                        const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+                        if(re) {
+                            return true;
+                        }
+                        else{
+                            return "You have entered an invalid email address."
+                        } 
+                    },
                 },
                 {
                     type: "input",

@@ -23,16 +23,17 @@ This application helps you to quick create a website with your team profile info
 
 To install necessary dependencies, run the following command:
 ```
-npm i inquirer
+npm i
 ```
+It will install inquirer, and jest for tests.
 
 ## Usage
 
-To start, run on your command line `node index.js`, this will prompt a series of questions that will be used to build your team. To start you will be asked to enter the Manager information such as name, email, id and office number. Once Manager information is completed user can chose between enter a new Engineer, Intern, or not enter more employees. When selected Engineer the required information are name, email, id, and GitHub username. When selected Intern the required information are name, email, id, and school name. Once you have completed to enter all your team information a new `team.html` file will be created and saved in the `output` directory.
+To start, run on your command line `node app.js`, this will prompt a series of questions that will be used to build your team. To start you will be asked to enter the Manager information such as name, email, id and office number. Once Manager information is completed user can chose between enter a new Engineer, Intern, or not enter more employees. When selected Engineer the required information are name, email, id, and GitHub username. When selected Intern the required information are name, email, id, and school name. Once you have completed to enter all your team information a new `team.html` file will be created and saved in the `output` directory.
 
 Click on the gif below to watch a video of a new team profile been created.
 
-[![Team Builder Demo](.gif)](https://youtu.be/)
+[![Team Builder Demo](https://github.com/Mimila-85/TemplateEngine_EmployeeSummary/blob/master/assets/images/employeeSummaryTemplate.gif)](https://youtu.be/pyuKPdjc-wk)
 
 ## License
 
@@ -46,7 +47,7 @@ If you would like to participate on this project please submit any bugs or featu
 
 To run tests, run the following command:
 ```
-Npm run test
+npm run test
 ```
 
 ## Questions

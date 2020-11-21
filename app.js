@@ -174,7 +174,7 @@ class TeamBuilder {
             ])
             .then(res =>{
                 // Build a new object with the promise from the inquirer.
-                const newInter = new Intern(res.internName, res.interId, res.interEmail, res.interSchoolName);
+                const newInter = new Intern(res.interName, res.interId, res.interEmail, res.interSchoolName);
                 
                 // Push the new object to the employee array.
                 employee.push(newInter);
